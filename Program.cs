@@ -9,6 +9,8 @@ namespace AlogrithmsAndDatabasePractice
     {
         static void Main(string[] args)
         {
+            // This is my test area
+
             /*
             Stack myStack = new Stack();
             myStack.Push(10);
@@ -16,9 +18,12 @@ namespace AlogrithmsAndDatabasePractice
             myStack.Push(30);
             myStack.Peek();
             */
+
+            /*
             int[] arr = { 3, 2, 1 };
             BubbleSort.Sort(arr);
             DisplayTools<int>.DisplayArray(arr);
+            */
         }
     }
 }
