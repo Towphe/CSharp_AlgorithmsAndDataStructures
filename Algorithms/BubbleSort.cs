@@ -7,27 +7,21 @@ namespace AlogrithmsAndDatabasePractice.Algorithms
     // Currently under construction
     static class BubbleSort
     {
-        public static int[] Sort(int[] arr)
+        public static void Sort(int[] arr)
         {
-            int[] arrangedArr = arr;
-            for(int i=0; i<arr.Length; i++)
+            int n = arr.Length;
+            for (int i=0; i<n-1; i++)
             {
-                for(int j=0; j<arr.Length; i++)
+                for (int j=0; j<n-i -1; j++)
                 {
-                    if (arr[i] - arr[i + 1] < 0)
+                    if (arr[j] > arr[j + 1])
                     {
-                        int n1 = arr[i];
-                        int n2 = arr[i + 1];
-                        arrangedArr[i] = arr[i + 1];
-                        arrangedArr[i + 1] = arr[i];
-                        // switch arr[i] && arr[0]
-                        // make an exception for the last one
+                        int temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
                     }
                 }
-                // 1 2 3 4 5 ; 
             }
-            return arrangedArr;
         }
-        
     }
 }
